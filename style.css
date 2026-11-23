@@ -1,12 +1,17 @@
 ::selection {
-    background-color: var(--text);
-    color: var(--bckg);
+    background: var(--text) !important;
+    color: var(--bckg) !important;
 }
 
 a{
-    color:var(--text);
+    color:var(--darker);
     cursor:pointer;
     text-decoration: none;
+}
+#about{
+    color:var(--text);
+    text-decoration:underline;
+    text-underline-offset: 1vh;
 }
 
 html,body{
@@ -15,11 +20,17 @@ html,body{
     min-height:100vh;
     color: var(--text);
     text-decoration: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100%;
+    margin: 0;
+
     
 }
 header{
     position: relative;
     z-index:2;
+
 }
 .logo{
     display:flex;
@@ -27,6 +38,7 @@ header{
     margin-left: -2vw;
     gap:15vw;
 }
+
 #biglogo{
     font-size:0.4vw;
     color: var(--text);
@@ -43,6 +55,7 @@ header{
     margin-top:3.5vh;
     transition: transform 0.25s ease;
     user-select: none;
+    font-size: 1.1vw;;
 }
 .upperbuttons a:hover{
     transform:scale(1.1);
@@ -81,8 +94,8 @@ hr{
     margin-top:-2vh;
     font-size:2vw;
 }
-.first h3{
-    color:rgb(107, 107, 107);
+.blocks h3{
+    color:rgb(57, 57, 57);
     font-family: "JetBrains Mono", monospace;
     font-size:1vw;
     margin-left:8vw;
@@ -96,6 +109,8 @@ hr{
     margin-left:10vw;
     margin-top:15vh;
     transition: transform 0.25s ease;
+    font-size: 1.2vw;
+    user-select: none;
     
 }
 .first a:hover{
@@ -131,6 +146,7 @@ hr{
 .links{
     display:flex;
     gap:10vw;
+    margin-top:1vh;
 }
 .links a{
     color:var(--darker);
@@ -146,4 +162,102 @@ hr{
     top:0;
     left:0;
     z-index:-0;
+}
+.hands {
+    margin-top:17vh;
+    font-size:1vw;
+    margin-left:-0vw;
+    display:flex;
+    justify-content: space-between;
+    font-family: "JetBrains Mono", monospace;
+    margin-bottom:10vh;
+    user-select: none;
+}
+
+
+.hands img{
+    width:15vw;
+    padding:1vw;
+    border:0.2vw dotted var(--text);
+}
+.hands p{
+    color:var(--darker);
+    font-size: 1vw;
+    margin:-0.2vw;
+}
+.hands h1{
+    color:var(--text);
+    font-size:2vw;
+}
+.downblocks{
+    border:0.1vw solid var(--text);
+    padding:2vw;
+}
+#hrbot{
+    margin-top:7vh;
+}
+.hands pre{
+    margin-left:-10vw;
+}
+
+
+
+
+
+#one{
+    margin-left:9vw;
+    transition: transform 0.25s ease;
+    cursor:pointer;
+}
+#one:hover{
+    transform: scale(1.1);
+}
+#two{
+    margin-right:9vw;
+    transition: transform 0.25s ease;
+    cursor:pointer;
+}
+#two:hover{
+    transform: scale(1.1);
+}
+
+
+
+.skills{
+    font-family: "JetBrains Mono", monospace;
+    color:var(--text2);
+    font-size:1vw;
+    padding:1vw;
+    border:0.2vw dotted var(--text);
+}
+.skills span{
+    color:var(--text);
+    font-size:2vw;
+    
+}
+#spiral{
+    color:var(--text);
+    margin-left:6vw;
+    font-size:0.5vw;
+    margin-top:4vh;
+}
+#rights{
+    text-decoration: overline;
+    margin-top:15vh;
+    font-family: "JetBrains Mono", monospace;
+    
+    margin-bottom:-1vh;
+    font-size:1vw;
+    color:rgb(57, 57, 57);
+}
+#theme-btn{
+    font-size:1vw;
+    cursor:pointer;
+    padding-bottom:-1vh;
+    margin-bottom:7vh;
+    border:0.2vw solid var(--text);
+    margin-left:-3vw;
+    font-family: "JetBrains Mono", monospace;
+    user-select: none;
+
 }
